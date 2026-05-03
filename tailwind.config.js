@@ -1,0 +1,133 @@
+/** @type {import('tailwindcss').Config} */
+export default {
+  content: ['./index.html', './src/**/*.{js,ts,jsx,tsx}'],
+  theme: {
+    extend: {
+      colors: {
+        primary: {
+          DEFAULT: '#28ABE6',
+          50: '#E8F6FD',
+          100: '#D1EDFB',
+          200: '#A3DBF7',
+          300: '#75C9F3',
+          400: '#47B7EF',
+          500: '#28ABE6',
+          600: '#1E8BB8',
+          700: '#166A8A',
+          800: '#0E4A5C',
+          900: '#062A2E',
+        },
+        navy: {
+          DEFAULT: '#2B4570',
+          50: '#E8ECF2',
+          100: '#D1D9E5',
+          200: '#A3B3CB',
+          300: '#758DB1',
+          400: '#476797',
+          500: '#2B4570',
+          600: '#22375A',
+          700: '#1A2944',
+          800: '#111C2E',
+          900: '#090F18',
+        },
+        accent: {
+          DEFAULT: '#7AC74F',
+          50: '#F0F9EB',
+          100: '#E1F3D7',
+          200: '#C3E7AF',
+          300: '#A5DB87',
+          400: '#87CF5F',
+          500: '#7AC74F',
+          600: '#62A03D',
+          700: '#4A792B',
+          800: '#325219',
+          900: '#1A2B07',
+        },
+        dark: {
+          DEFAULT: '#0A0F1C',
+          50: '#1A2035',
+          100: '#151B2E',
+          200: '#111728',
+          300: '#0D1322',
+          400: '#0A0F1C',
+          500: '#070B15',
+          600: '#050810',
+          700: '#03050B',
+          800: '#020307',
+          900: '#010204',
+        },
+      },
+      fontFamily: {
+        sans: ['Plus Jakarta Sans', 'system-ui', '-apple-system', 'sans-serif'],
+        display: ['Plus Jakarta Sans', 'system-ui', '-apple-system', 'sans-serif'],
+        mono: ['JetBrains Mono', 'Fira Code', 'monospace'],
+      },
+      animation: {
+        'fade-in': 'fadeIn 0.6s ease-out forwards',
+        'fade-in-up': 'fadeInUp 0.6s ease-out forwards',
+        'fade-in-down': 'fadeInDown 0.6s ease-out forwards',
+        'slide-in-left': 'slideInLeft 0.6s ease-out forwards',
+        'slide-in-right': 'slideInRight 0.6s ease-out forwards',
+        'scale-in': 'scaleIn 0.5s ease-out forwards',
+        'pulse-slow': 'pulse 3s ease-in-out infinite',
+        'float': 'float 6s ease-in-out infinite',
+        'grid-flow': 'gridFlow 20s linear infinite',
+        'glow': 'glow 2s ease-in-out infinite alternate',
+        'shimmer': 'shimmer 2s linear infinite',
+      },
+      keyframes: {
+        fadeIn: {
+          '0%': { opacity: '0' },
+          '100%': { opacity: '1' },
+        },
+        fadeInUp: {
+          '0%': { opacity: '0', transform: 'translateY(30px)' },
+          '100%': { opacity: '1', transform: 'translateY(0)' },
+        },
+        fadeInDown: {
+          '0%': { opacity: '0', transform: 'translateY(-30px)' },
+          '100%': { opacity: '1', transform: 'translateY(0)' },
+        },
+        slideInLeft: {
+          '0%': { opacity: '0', transform: 'translateX(-30px)' },
+          '100%': { opacity: '1', transform: 'translateX(0)' },
+        },
+        slideInRight: {
+          '0%': { opacity: '0', transform: 'translateX(30px)' },
+          '100%': { opacity: '1', transform: 'translateX(0)' },
+        },
+        scaleIn: {
+          '0%': { opacity: '0', transform: 'scale(0.9)' },
+          '100%': { opacity: '1', transform: 'scale(1)' },
+        },
+        float: {
+          '0%, 100%': { transform: 'translateY(0px)' },
+          '50%': { transform: 'translateY(-20px)' },
+        },
+        gridFlow: {
+          '0%': { transform: 'translateY(0)' },
+          '100%': { transform: 'translateY(-50%)' },
+        },
+        glow: {
+          '0%': { boxShadow: '0 0 20px rgba(40, 171, 230, 0.1)' },
+          '100%': { boxShadow: '0 0 40px rgba(40, 171, 230, 0.3)' },
+        },
+        shimmer: {
+          '0%': { backgroundPosition: '-200% 0' },
+          '100%': { backgroundPosition: '200% 0' },
+        },
+      },
+      backgroundImage: {
+        'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
+        'gradient-conic': 'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
+        'grid-pattern': 'linear-gradient(rgba(40, 171, 230, 0.03) 1px, transparent 1px), linear-gradient(90deg, rgba(40, 171, 230, 0.03) 1px, transparent 1px)',
+        'grid-pattern-lg': 'linear-gradient(rgba(40, 171, 230, 0.05) 1px, transparent 1px), linear-gradient(90deg, rgba(40, 171, 230, 0.05) 1px, transparent 1px)',
+      },
+      backgroundSize: {
+        'grid': '40px 40px',
+        'grid-lg': '60px 60px',
+      },
+    },
+  },
+  plugins: [],
+};
