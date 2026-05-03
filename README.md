@@ -131,7 +131,7 @@ src/
  ├── assets/
  ├── App.tsx
  └── main.tsx
-
+```
 ---
 
 ## Branding
