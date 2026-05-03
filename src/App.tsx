@@ -33,7 +33,7 @@ function LoadingScreen({ onComplete }: { onComplete: () => void }) {
           className="mb-8 flex items-center justify-center"
         >
         <img
-          src="/ocp-logo.png"
+          src={`${import.meta.env.BASE_URL}ocp-logo.png`}
           alt="On Call Prime Logo"
           className="w-36 md:w-44 h-auto object-contain"
         />
