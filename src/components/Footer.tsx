@@ -36,7 +36,7 @@ export default function Footer() {
           <div className="lg:col-span-2">
             <Link to="/" className="flex items-center mb-6">
               <img
-                src="/ocp-logo.png"
+                src={`${import.meta.env.BASE_URL}ocp-logo.png`}
                 alt="On Call Prime"
                 className="h-14 w-auto object-contain"
                 onError={(e) => {

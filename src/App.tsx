@@ -98,7 +98,7 @@ export default function App() {
   const [isLoading, setIsLoading] = useState(true);
 
   return (
-    <BrowserRouter basename ="/on-call-prime">
+    <BrowserRouter basename={import.meta.env.BASE_URL}>
       <AnimatePresence mode="wait">
         {isLoading && (
           <LoadingScreen
